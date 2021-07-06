@@ -1,0 +1,125 @@
+1. void main(){
+  
+  for ( int i=0; i<=100; i++){
+    
+    print("$i");
+  }
+}
+
+2.void main(){
+   int val = 0;
+  const List numero = [1,4,6,8,10,120,15,350,50,10];
+  
+  for (int num in numero )
+  {
+    print (num); 
+    if (num > val){
+      val = num;
+    }
+  }
+  
+  print ("O maior valor é $val");
+  
+}
+
+4.void main (){
+  
+  for(int x = 0; x<=10 ; x++)
+  {
+    if (x % 2 == 0){
+      print ("$x");
+    }
+  }
+}
+
+5.void main(){
+   double val = 0;
+  const List numero = [1,4,6,8,10,9,5,5,5,10];
+  
+  for (int num in numero )
+  {
+    val = val + num;
+  }
+  
+  val = val/10;
+  print ("A média da turma é $val");
+  
+}
+
+6.void main(){
+  int val = 9;
+  int result = 0;
+  print("Tabuada do $val");
+  
+  for(int i = 0; i<=10; i++){
+    result = val*i;
+    print("$val X $i = $result");
+  }
+  
+}
+
+7.void main(){
+  int big = 0;
+  int small = 300;
+  double media = 0;
+  
+  const List numero = [160,170,184,169,192,195,175,187,190,180,161,164,191,197,186];
+  
+  for (int num in numero )
+  { 
+    if (num > big){
+      big = num;
+    }
+    if (num < small){
+      small = num;
+    }
+    media = media + num;
+  }
+  
+  media = media/15;
+  
+  print ("A maior altura é $big cm");
+  print ("A menor altura é $small cm");
+  print ("A media de altura é $media cm");
+}
+
+8.void main(){
+  
+  int val = 5;
+  print("$val");
+  for(int i = (val-1); i>0; i--){
+    val = val*i;
+     print("$i");
+  }
+  
+   print("valor é $val");
+}
+
+10.void main(){
+  
+   int total = 0;
+   int sete = 0;
+   int qua = 0;
+   int vin = 0;
+  
+   const List multa = [7,14,21,21,5,12];
+  
+   for (int num in multa )
+  {
+    total++;
+    if (num <= 7){
+      sete++;
+    }
+    else if (num <= 14){
+      qua++;
+    }
+    else
+      vin++;
+  }
+  
+  print ("O total de multas é $total");
+  print ("Número de multas de até RS500,00 é $sete");
+  print ("Número de multas de RS501,00 a RS1000,00 é $qua");
+  print ("Número de multas acima de RS1001,00 é $vin");
+ 
+}
