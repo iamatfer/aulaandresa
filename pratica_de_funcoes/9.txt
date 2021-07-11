@@ -1,0 +1,28 @@
+void main() {
+  int pri = 29;
+  int seg = 30;
+  
+  numero(pri,seg);
+  
+}
+void numero(int pri, int seg) {
+  
+  if(pri<seg){
+
+    for(int x = seg; x >= pri; x--){
+      
+      print ("$x");
+    }
+    
+  }
+  else if (seg<pri){
+    
+    for(int x = pri; x >= seg ; x--){
+      
+      print ("$x");
+    }
+   
+  }
+  else
+    print("Valores Iguais");
+}
